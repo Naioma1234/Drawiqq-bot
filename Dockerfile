@@ -1,5 +1,5 @@
 FROM python:3.11-slim
 WORKDIR /app
-COPY . .
-RUN pip install -r requirements.txt
-CMD ["python", "drawiqq-bot.py"]
+COPY . /app/
+RUN pip install -r /app/requirements.txt
+CMD ["python", "/app/drawiqq-bot.py"]
